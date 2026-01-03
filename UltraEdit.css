@@ -10,9 +10,84 @@ html {
 
 body {
   height: 100dvh;
+  background-color: #fff;
+  font-family: Inter, Helvetica, Arial, Lucida, sans-serif;
+  line-height: 1.4em;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   text-decoration: none;
   color: #000;
+}
+
+/* Navigation Selectors */
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px auto 20px;
+  width: min(1300px, 92vw);
+  border: 1px solid #cecece;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 3px;
+  padding: 8px 16px 6px;
+  flex-wrap: wrap;
+}
+
+nav .links-container {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  gap: 12px;
+}
+
+nav a {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  line-height: 14px;
+  color: #2e2e2e !important;
+}
+
+.logo {
+  height: 100%;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.primary-btn {
+  background-color: #ffd741;
+  color: #000;
+  padding: 12px 23px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.margin-spec {
+  margin: 0 12px;
+}
+
+.search-btn {
+  transform: rotate(90deg) !important;
 }
