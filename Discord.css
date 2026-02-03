@@ -1,0 +1,65 @@
+:root {
+  --font-primary:
+    "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --interactive-icon-default: #8a9398;
+  --interactive-icon-secondary: #96979e;
+  --interactive-icon-hover: #dcddde;
+  --interactive-icon-active: #fff;
+  --background-primary: #36393f;
+  --background-secondary: #121214;
+  --text-normal: #dcddde;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-primary);
+  color: var(--text-normal);
+}
+
+nav {
+  background-color: var(--background-secondary);
+  width: 100vw;
+  padding: 1rem 0;
+  height: 2rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.page-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  justify-content: center;
+  color: #fff;
+  line-height: 18px;
+  font-family: var(--font-primary);
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.nav-icons {
+  display: flex;
+  position: absolute;
+  top: 0.25rem;
+  right: 18px;
+  gap: 1.5rem;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  color: #fff;
+  line-height: 18px;
+  align-items: center;
+  font-family: var(--font-primary);
+}
